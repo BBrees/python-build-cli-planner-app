@@ -1,6 +1,6 @@
 from src.database import add_reminder, list_reminders
 
-from src.deadlined_reminders import DateReminder
+from src.deadlined_reminders import DateReminder, DeadlinedReminder
 
 from src.reminder import PoliteReminder
 

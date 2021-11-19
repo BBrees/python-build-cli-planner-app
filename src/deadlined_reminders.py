@@ -1,4 +1,5 @@
 from abc import ABCMeta, ABC, abstractmethod
+import collections
 from collections.abc import Iterable
 
 from dateutil.parser import parse
@@ -10,7 +11,7 @@ class DeadlinedMetaReminder(Iterable):
     def is_due():
         pass
 
-class DeadlinedReminder(ABC):
+class DeadlinedReminder(collections.abc.Iterable):
 
     @abstractmethod
     def is_due():
