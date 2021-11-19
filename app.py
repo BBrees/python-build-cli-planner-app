@@ -4,6 +4,8 @@ from src.deadlined_reminders import DateReminder, DeadlinedReminder
 
 from src.reminder import PoliteReminder
 
+from src.external_reminders import EveningReminder
+
 DeadlinedReminder.register(PoliteReminder)
 
 
