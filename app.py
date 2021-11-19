@@ -1,5 +1,6 @@
 from src.database import add_reminder, list_reminders
 
+from src.deadlined_reminders import DateReminder
 
 def handle_input():
     choice = input("Choice: ")
