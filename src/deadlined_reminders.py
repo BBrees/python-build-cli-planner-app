@@ -10,7 +10,7 @@ class DeadlinedMetaReminder(Iterable):
     def is_due():
         pass
 
-class DeadlinedReminder(Iterable):
+class DeadlinedReminder(ABC):
 
     @abstractmethod
     def is_due():
