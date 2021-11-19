@@ -4,6 +4,9 @@ from src.deadlined_reminders import DateReminder, DeadlinedReminder
 
 from src.reminder import PoliteReminder
 
+DeadlinedReminder.register(PoliteReminder)
+
+
 def handle_input():
     choice = input("Choice: ")
     if choice == "3":
