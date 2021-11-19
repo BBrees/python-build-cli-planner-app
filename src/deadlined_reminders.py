@@ -5,13 +5,13 @@ from collections.abc import Iterable
 from dateutil.parser import parse
 from datetime import datetime
 
-class DeadlinedMetaReminder(Iterable):
+class DeadlinedMetaReminder(Iterable, metaclass = ABCMeta):
 
     @abstractmethod
     def is_due():
         pass
 
-class DeadlinedReminder(collections.abc.Iterable):
+class DeadlinedReminder(ABC, Iterable):
 
     @abstractmethod
     def is_due():
